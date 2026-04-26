@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+              background-color:black;
+              font-weight:bold;
+            }
+         h1{
+              font-size:50px;
+              color:white;
+              text-align:center;
+           }    
+         .main{
+               grid-template-columns:repeat(3,1fr);
+               grid-template-rows:repeat(3,1fr);
+                gap:20px;
+                padding:15px;
+                display:grid;
+               
+         }
+        img{
+               height:100%;
+               width:100%;
+               object-fit:cover;
+               transition: transform 0.4s ease;
+            
+
+           }
+          .main div{
+                    height:250px;
+                    overflow:hidden;
+                    border-radius:20px;
+                    border: 3px solid white;
+           }
+          img:hover{
+                  transform: scale(1.1);
+                   filter: brightness(70%);
+           }
+
+@media (max-width:900px){
+  .main{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+@media (max-width:600px){
+  .main{
+    grid-template-columns:1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+ <h1>Image  Gallery</h1>
+ <div class="main">
+ <div><img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsfGVufDB8fDB8fHww"></div>
+ <div><img src="https://plus.unsplash.com/premium_photo-1666278379770-440439b08656?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YW5pbWFsfGVufDB8fDB8fHww"></div>
+ <div><img src="https://images.unsplash.com/photo-1665849867676-13d69ba0949a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+ <div><img src="https://plus.unsplash.com/premium_photo-1661919737003-68c58a0f7fae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8"></div>
+ <div><img src="https://images.unsplash.com/photo-1569057605887-c64a27664654?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDk5fHx8ZW58MHx8fHx8"></div>
+ <div><img src="https://images.unsplash.com/photo-1764183122520-9bf4bb692949?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+<div><img src="https://media.istockphoto.com/id/183338707/photo/krishna-mrigam-or-blackbuck-antilope-cervicapra-india.jpg?s=612x612&w=0&k=20&c=bcaUAJ0ubQS5p9nI5AuejQikMOpHFXvGFc6uTqjGntI="></div>
+<div><img src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+<div><img src="https://media.istockphoto.com/id/144349420/photo/donkey-eating-grass.jpg?s=612x612&w=0&k=20&c=HrUbUnmKb36fvV2ID9JlzTJRGezX1zJc_w6gHvbiib0="></div>
+</div>
+</body>
+</html>
